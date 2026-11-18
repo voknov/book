@@ -32,9 +32,6 @@
 ```
 .
 ├── 75首古诗-注音版.pdf          # ⭐ 成品：高清拼音注音 PDF（下载打印）
-├── 75首古诗-注音版.html         # 网页版，浏览器直接打开
-├── 75首古诗-OCR全文.txt         # OCR 原始文本（已逐字校对）
-├── gen_pinyin_pdf.py            # 生成脚本（含多音字人工校对表）
 └── docs/                        # README 预览图
     ├── preview-cover.png
     └── preview-page-1.png
@@ -44,34 +41,15 @@
 
 ## 🚀 快速使用
 
-**方式一：直接用（推荐）**
+**方式：直接用（推荐）**
 
 直接下载 [`75首古诗-注音版.pdf`](./75首古诗-注音版.pdf)，A4 纸打印即可。
 
-**方式二：网页版预览**
-
-浏览器打开 [`75首古诗-注音版.html`](./75首古诗-注音版.html)，可用浏览器的「打印 → 另存为 PDF」自行导出。
-
-**方式三：本地重新生成**
-
-```bash
-pip install pypinyin          # 注音依赖
-python3 gen_pinyin_pdf.py     # ① 生成 75首古诗-注音版.html
-
-# ② 用 Chrome 无头模式打印为 PDF（macOS）
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
-  --headless --no-pdf-header-footer \
-  --print-to-pdf="75首古诗-注音版.pdf" \
-  "file://$PWD/75首古诗-注音版.html"
-```
-
-想调整字体、字号、每页几首，直接改 `gen_pinyin_pdf.py` 里的 `<style>` 即可。
 
 ---
 
 ## ✅ 注音是如何保证准确的
 
-脚本先用 [`pypinyin`](https://github.com/mozillazg/python-pinyin) 自动注音，再叠加一张**多音字人工校对表**，重点处理古典诗词里的易错读音与通假字：
 
 | 诗句 | 正确注音 | 易错点 |
 | --- | --- | --- |
