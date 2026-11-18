@@ -23,7 +23,7 @@
 
 | 封面 | 正文（第 1 首《江南》） |
 | --- | --- |
-| ![封面](docs/preview-cover.png) | ![正文](docs/preview-page-1.png) |
+| ![封面](preview-cover.png) | ![正文](preview-page-1.png) |
 
 ---
 
